@@ -1,0 +1,32 @@
+{
+  "name": "jssdk",
+  "version": "1.0.0",
+  "description": "Js-SDK for hyperchain",
+  "main": "/dist/sdk.js",
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "build-pro": "webpack --mode production",
+    "test": "jest --config jestconfig.json",
+    "release": "standard-version"
+  },
+  "author": "QinYuan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.6.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "standard-version": "^9.3.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jsbn": "^1.1.0"
+  }
+}
