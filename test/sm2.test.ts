@@ -45,7 +45,7 @@ console.log("sigValueHex4 -->", sigValueHex4)
 
 // console.log("verifyResult4 -->", verifyResult4)
 
-let sigValueHex5 = doSignature(msg, privateKey, {pointPool:null, der: null, hash:true, publicKey:publicKey
+let sigValueHex5 = doSignature(msg, privateKey, {pointPool:null, der: true, hash:true, publicKey:publicKey
    // 传入公钥的话，可以去掉sm3杂凑中推导公钥的过程，速度会比纯签名 + 生成椭圆曲线点 + sm3杂凑快
 });
 
