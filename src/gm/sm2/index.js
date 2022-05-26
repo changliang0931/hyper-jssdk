@@ -81,7 +81,9 @@ function doSignature(msg, privateKey, { pointPool, der, hash, publicKey } = {}) 
     if (hash) {
         // sm3杂凑
         publicKey = publicKey || getPublicKeyFromPrivateKey(privateKey);
+        console.log("publicKey------------>", publicKey)
         hashHex = doSm3Hash(hashHex, publicKey);
+        console.log("doSignature hashHex------------>", hashHex)
     }
 
     let dA = new BigInteger(privateKey, 16);
